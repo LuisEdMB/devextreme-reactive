@@ -55,3 +55,6 @@ export const slice = arr => Array.prototype.slice.call(arr); // slice can be ren
 
 /** @internal */
 export const hasWindow = () => typeof window !== 'undefined';
+
+/** @internal */
+export const isEdgeBrowser = () => /Edge/.test(window.navigator.userAgent);
